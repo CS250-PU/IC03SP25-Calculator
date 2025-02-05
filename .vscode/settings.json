@@ -20,7 +20,8 @@
     "CXX": "/usr/bin/clang++-16 -fstandalone-debug -g"
   },
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "random": "cpp"
   },
   "cmake.debugConfig": { // ADD THIS FOR LLDB SUPPORT IN CMAKE
     "type": "lldb",
