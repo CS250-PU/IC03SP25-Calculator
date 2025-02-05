@@ -15,9 +15,9 @@ TEST (CalculatorTest, divide) {
   EXPECT_EQ (.125, cCalculator.divide (1.0, 8.0));
 }
 
-TEST (CalculatorTest, divideExceptions) { 
-  Calculator cCalculator; 
- 
-  EXPECT_THROW (cCalculator.divide (1.0, 0.0), 
-  std::runtime_error);
+TEST (CalculatorTest, divideExceptions) {
+  Calculator cCalculator;
+
+  EXPECT_THROW (cCalculator.divide (1.0, 0.0),
+    std::runtime_error);
 }
