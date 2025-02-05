@@ -18,7 +18,7 @@ double Calculator::multiply (double num1, double num2) {
 
 double Calculator::divide (double num1, double num2) {
 
-  if (num2 == 0) {
+  if (0 == num2) {
     throw std::runtime_error ("Divide by zero");
   }
   return num1 / num2;
