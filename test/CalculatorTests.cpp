@@ -1,10 +1,30 @@
 #include "../include/Calculator.h"
 #include <gtest/gtest.h>
 
-// interface to unit test
-#include "../include/SampleClass.h"
-
 // Each unit test for a given function is added below
+
+TEST (CalculatorTest, clear) {
+  Calculator cCalculator;
+
+  EXPECT_EQ (0.0, cCalculator.getResult ());
+  cCalculator.add (1.0);
+  EXPECT_EQ (1.0, cCalculator.getResult ());
+  cCalculator.clear ();
+  EXPECT_EQ (0.0, cCalculator.getResult ());
+}
+
+TEST (CalculatorTest, getResult) {
+
+  EXPECT_EQ (0.0, Calculator ().getResult ());
+}
+
+
+TEST (CalculatorTest, ctor) {
+  Calculator cCalculator;
+
+  EXPECT_EQ (0.0, cCalculator.getResult ());
+}
+
 TEST (CalculatorTest, divide) {
   Calculator cCalculator;
   EXPECT_EQ (1.0, cCalculator.divide (1.0, 1.0));

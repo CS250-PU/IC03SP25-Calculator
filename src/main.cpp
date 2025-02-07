@@ -16,7 +16,7 @@ int main () {
   SampleClass cSampleClass;
   Calculator cCalculator;
 
-  std::cout << "Factorial of 1: " << cSampleClass.factorial (0) << std::endl;
+  std::cout << "Factorial of 1: " << cSampleClass.factorial (1) << std::endl;
   std::cout << "1.0 / 0.0 = " << cCalculator.divide (1.0, 0.0) << std::endl;
   std::cout << "Process Completed" << std::endl;
 
